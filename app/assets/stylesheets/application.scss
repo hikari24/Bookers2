@@ -17,18 +17,35 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #333333;
 	background: #fff;
+	
 }
-
-
 
 header {
 	background-color: #222;
 	color: white;
+}
+
+.bookers {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+ul {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	margin: 33px;
 }
 
 li {
@@ -43,13 +60,43 @@ strong {
 	font-weight: bold;
 }
 
+.btn-info,
+.btn-success {
+	width: 100px;
+	color: gray;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+
+}
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.field {
+	margin-top: 10px;
+}
+
+.opinion {
+	margin-bottom: 10px;
+}
+
+.actions {
+	margin-top: 10px;
+}
+
+
 p {
 	font-family: verdana, arial, helvetica, sans-serif;
 	font-size: 13px
 }
 
-.btn-info,
-.btn-success {
-	width: 100px;
-	color: gray;
+footer {
+	text-align: right;
 }

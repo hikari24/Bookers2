@@ -1,23 +1,29 @@
+<div class="container">
+
 <h2>User info</h2>
 
-<%= form_for(@user) do |f| %>
-    
-    <div class="field">
-	 <label for="user_name">Name</label>
-	 <%= f.text_field :name %>
-	</div>
+  <%= form_for(@user) do |f| %>
 
-	<div class="field">
-	 <label for="user_image">Image</label>
-	</div>
+  <!--アカウント編集時に名前を入力できるようにフォームを追加-->
+      <div class="field">
+        <label for="user_name">Name</label>
+          <%= f.text_field :name %>
+      </div>
 
-	<div class="field">
-	 <label for="user_introduction">Introduction</label>
-	 <%= f.text_field :introduction %>
-	</div>
+      <div class="field">
+        <label for="profile_image">Image</label>
+          <%= f.attachment_field :profile_image %>
+      </div>
 
-    <div class="action">
-  	 <button type="buttun" class="btn btn-default">Update User</button>
-  	</div>
+  <!--アカウント編集時にプロフィールを入力できるようにフォームを追加-->
+      <div class="field">
+        <label for="introductin">Introduction</label>
+          <%= f.text_area :introduction %>
+      </div>
 
-<% end %>
+      <div class="actions">
+        <%= f.submit "Update User" %>
+      </div>
+   <% end %>
+
+</div>
