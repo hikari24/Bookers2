@@ -4,5 +4,5 @@ class Book < ApplicationRecord
 	attachment :profile_image
 
 	validates :title, presence: true
-	validates :body, presence: true
+	validates :body, presence: true, length: { in:1..200 }
 end

@@ -2,9 +2,9 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-3">
+		<div class="col-xs-3">
 			<h2>User info</h2>
-			<%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format: 'jpeg', class: "pull-left profile-img" %>
+			<%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format: 'jpeg', class: "pull-left profile-img", fallback: "no_image.jpg" %>
 
 
 
@@ -25,7 +25,7 @@
 				 <% if @user.id == current_user.id %>
 
 				 <%= link_to edit_user_path(@user) do %>
-				  <span class="col-md-12 btn btn-default glyphicon glyphicon-wrench" aria-hidden="true"></span>
+				  <span class="col-xs-12 btn btn-default glyphicon glyphicon-wrench" aria-hidden="true"></span>
 				 <% end %>
 
 				 <% end %>
@@ -35,31 +35,31 @@
 			<h2>New book</h2>
 				<%= form_for(@book) do |f| %>
 				  <div class="field-row">
-	 			  	<label for="book_title">Title</label>
-	 			  	 <div class="col-md-12">
-	 				  <%= f.text_field :title %>
+				  	<div class="col-xs-12">
+	 			  		<label for="book_title">Title</label>
+	 				  	<%= f.text_field :title %>
 	 				 </div>
 				  </div>
 
 				  <div class="field-row">
-	 				<label for="book_body">Opinion</label>
-	 				 <div class="col-md-12">
-	 				  <%= f.text_area :body %>
+				  	<div class="col-xs-12">
+	 					<label for="book_body">Opinion</label>
+	 				  	<%= f.text_area :body %>
 	 				 </div>
 				  </div>
 
 				  <div class="action-row">
-				  	<div class="col-md-12">
-				  	 <button type="submit" class="btn btn-primary">Create Book</button>
+				  	<div class="col-xs-12">
+				  	 <button class="btn btn-primary btn-block" type="submit" >Create Book</button>
 				  	</div>
   				  </div>
 				<% end %>
 
 
 		</div>
-		<div class="col-md-9">
+		<div class="col-xs-9">
 			<h2>Users</h2>
-			<div class="table">
+			<table class="table">
 				<thead>
 				 <tr>
 				 	<th>Image</th>
@@ -72,12 +72,12 @@
 				 <% @users.each do |user| %>
 
 			  	  <tr>
-			  	  	<td></td>
-			  	 	<td><%= @user.name %></td>
+			  	  	<td><%= attachment_image_tag user, :profile_image, :fill, 40, 40, format: 'jpeg', class: "pull-left profile-img", fallback: "no_image.jpg", size:'40x40' %>
+			  	 	<td><%= user.name %></td>
 				  	<td><%= link_to 'Show', user_path(user) %></td>
 				  </tr>
 				 </tbody>
 				 <% end %>
-			</div>
+			</table>
 		</div>
 	</div>

@@ -17,17 +17,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #333333;
 	background: #fff;
+	line-height: 1.42857143;
+	
+}
+
+.flash {
 	
 }
 
@@ -41,11 +41,16 @@ header {
 	padding-top: 10px;
 }
 
-ul {
+ul,
+p {
 	font-family: verdana, arial, helvetica, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	margin: 33px;
+}
+
+p {
+	margin: 0 0 10px;
 }
 
 li {
@@ -95,6 +100,13 @@ h2 {
 p {
 	font-family: verdana, arial, helvetica, sans-serif;
 	font-size: 13px
+}
+
+table {
+	width: 100%;
+	margin-bottom: 20px;
+	border-color: grey;
+
 }
 
 footer {
