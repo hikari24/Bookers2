@@ -17,6 +17,24 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+header {
+	color: white;
+}
+
+.nav {
+	padding-left: 0;
+}
+
+.icon {
+	display: block;
+	color: red;
+	padding: 12px;
+}
+
+#error_explanation {
+	color: red;
+}
+
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,16 +42,12 @@ body {
 	color: #333333;
 	background: #fff;
 	line-height: 1.42857143;
-	
+	margin: 33px;
+
 }
 
 .flash {
-	
-}
 
-header {
-	background-color: #222;
-	color: white;
 }
 
 .bookers {
@@ -53,12 +67,13 @@ p {
 	margin: 0 0 10px;
 }
 
-li {
-	display: block;
-}
-
 h1 {
 	font-size: 36px;
+}
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 strong {
@@ -67,9 +82,11 @@ strong {
 
 .btn-info,
 .btn-success {
-	width: 100px;
-	color: gray;
+	color: #666;
 }
+
+
+
 
 .container {
 	margin-right: auto;

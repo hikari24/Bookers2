@@ -1,6 +1,9 @@
 <body>
 
 	<div class="container">
+
+		 <%= render "layouts/error_messages" %>
+
 		<div class="row">
 			<div class="col-xs-3">
 				<h2>User info</h2>
@@ -30,7 +33,7 @@
 				</div>
 
 				<h2>New book</h2>
-				 <%= form_for(@new_book) do |f| %>
+				 <%= form_for(@book) do |f| %>
 				  <div class="field-row">
 				  	<div class="col-xs-12">
 	 			  	 <label for="book_title">Title</label>

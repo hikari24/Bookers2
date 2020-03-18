@@ -14,7 +14,7 @@ class BooksController < ApplicationController
 		else
 			@books = Book.all
 			@user = current_user
-			@new_book = Book.new
+			
 			render 'index'
 
 		end
@@ -22,7 +22,7 @@ class BooksController < ApplicationController
 
 	def index
 		@user = current_user
-		@new_book = Book.new
+		@book = Book.new
 		@books = Book.all
 		
 	end
