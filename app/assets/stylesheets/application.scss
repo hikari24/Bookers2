@@ -42,12 +42,15 @@ header {
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	color: #333333;
-	background: #fff;
+	background-color: #fff;
 	line-height: 1.42857143;
-	margin: 33px;
 
+}
+
+.body {
+	margin-top: 51px;
 }
 
 .flash {
