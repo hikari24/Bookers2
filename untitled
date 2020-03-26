@@ -1,0 +1,4 @@
+DB_USERNAME="hikari"
+DB_PASSWORD="18199222m"
+DB_HOST="rds-mysql-server.cxs1uvvwdfgk.ap-northeast-1.rds.amazonaws.com"
+DB_DATABASE="rds-mysql-server"
